@@ -19,7 +19,7 @@
 		EMAIL_ENABLED=1
 
 		# Email addresses to send a mail to, use , to separete multiple entries
-		EMAIL_RECEPIENTS="admin@gmail.com"
+		EMAIL_RECEPIENTS="josephhelela@gmail.com"
 
 		# No email for logging from this IPs, use , to separate multiple entries
 		EMAIL_IGNORED_IPS="8.8.8.8"
