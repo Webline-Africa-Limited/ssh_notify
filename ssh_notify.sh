@@ -32,7 +32,7 @@
 		MESSAGE_ENABLED=1
 
 		# List of services to check, use space to separate multiple entries
-		MESSAGE_SERVICES="nginx mysqld"
+		MESSAGE_SERVICES="lsws"
 
 	# }
 
