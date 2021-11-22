@@ -29,10 +29,10 @@
 	# Welcome message {
 
 		# Show message
-		MESSAGE_ENABLED=0
+		MESSAGE_ENABLED=1
 
 		# List of services to check, use space to separate multiple entries
-		MESSAGE_SERVICES="lsws"
+		MESSAGE_SERVICES=""
 
 	# }
 
