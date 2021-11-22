@@ -213,7 +213,7 @@ if ! [[ $MESSAGE_ENABLED -eq 0 ]]; then
 		echo
 	fi
 
-	echo " ${RED}CAUTION: Your IP has been Logged${CLEAR}
+	echo " ${YELLOW}CAUTION: Your IP has been Logged${CLEAR}
  Your IP address is ${YELLOW}${IP}${CLEAR}
  Total IP logins: ${YELLOW}${FOUND}${CLEAR}
 "
