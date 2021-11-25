@@ -28,7 +28,7 @@ Usage
 2. Configure the script to match your needs
 2. Login via ssh to test it
 
-`rm -f /etc/profile.d/ssh_notify.sh && wget https://raw.githubusercontent.com/Webline-Technologies/ssh_notify/master/ssh_notify.sh -O /etc/profile.d/ssh_notify.sh && chmod +x /etc/profile.d/ssh_notify.sh`
+`rm -f /etc/profile.d/ssh_notify.sh && wget https://raw.githubusercontent.com/Webline-Africa-Limited/ssh_notify/master/ssh_notify.sh -O /etc/profile.d/ssh_notify.sh && chmod +x /etc/profile.d/ssh_notify.sh`
 
 Credits
 --------------------
