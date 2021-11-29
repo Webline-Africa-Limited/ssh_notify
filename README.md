@@ -28,7 +28,7 @@ Usage
 2. Configure the script to match your needs
 2. Login via ssh to test it
 
-`yum install bind-utils && yum install mailx && rm -f /etc/profile.d/ssh_notify.sh && wget https://raw.githubusercontent.com/Webline-Africa-Limited/ssh_notify/master/ssh_notify.sh -O /etc/profile.d/ssh_notify.sh && chmod +x /etc/profile.d/ssh_notify.sh`
+`yum install bind-utils -y && yum install mailx -y && rm -f /etc/profile.d/ssh_notify.sh && wget https://raw.githubusercontent.com/Webline-Africa-Limited/ssh_notify/master/ssh_notify.sh -O /etc/profile.d/ssh_notify.sh && chmod +x /etc/profile.d/ssh_notify.sh`
 
 Credits
 --------------------
