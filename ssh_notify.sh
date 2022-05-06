@@ -170,7 +170,7 @@ PTR=`dig +short -x ${IP} | sed s/\.$//`
 if ! [[ $EMAIL_ENABLED -eq 0 ]] && ! inArray ${IP} "${EMAIL_IGNORED_IPS}"; then
 
 	# Email body
-	echo "This is an automated message reporting that a user has logged into the system.
+	echo "This is an automated message reporting that a user  has logged into the system.
 
 	Number of logins from this IP: ${FOUND}
 
@@ -183,9 +183,9 @@ if ! [[ $EMAIL_ENABLED -eq 0 ]] && ! inArray ${IP} "${EMAIL_IGNORED_IPS}"; then
 	Server IP :    `dig +short myip.opendns.com @resolver1.opendns.com`
 	Server port :  `echo ${SSH_CLIENT} | awk '{ port = $3 } END { print port }'`
 	Server time :  `date +'%Y-%m-%d %T'`
-	
-	Load average    : `uptime | grep -oP '(?<=average: ).*'`
-        Storage :      `df -h / | awk '{ a = $4; } END { print a }'`
+
+    Load average    : `uptime | grep -oP '(?<=average: ).*'`
+    Storage :      `df -h / | awk '{ a = $4; } END { print a }'`
 
 
 --
@@ -206,8 +206,8 @@ if ! [[ $MESSAGE_ENABLED -eq 0 ]] && [ $USER == 'root' ]; then
 	done;
 
 	echo " Uptime          :`uptime | grep -oP '^.*?(?=,)'`
- Load average    : `uptime | grep -oP '(?<=average: ).*'`
- Space available : `df -h / | awk '{ a = $4; } END { print a }'`"
+           Load average    : `uptime | grep -oP '(?<=average: ).*'`
+           Space available : `df -h / | awk '{ a = $4; } END { print a }'`"
 
 
 	if ! [[ -z $SERVICES ]]; then
@@ -217,9 +217,8 @@ if ! [[ $MESSAGE_ENABLED -eq 0 ]] && [ $USER == 'root' ]; then
 	fi
 
 	echo " ${YELLOW}CAUTION: Your IP has been Logged${CLEAR}
- Your IP address is ${YELLOW}${IP}${CLEAR}
- Total IP logins: ${YELLOW}${FOUND}${CLEAR}
-"
+            Your IP address is ${YELLOW}${IP}${CLEAR}
+            Total IP logins: ${YELLOW}${FOUND}${CLEAR}"
 
 fi
 
