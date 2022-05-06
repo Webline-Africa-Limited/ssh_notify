@@ -185,7 +185,7 @@ if ! [[ $EMAIL_ENABLED -eq 0 ]] && ! inArray ${IP} "${EMAIL_IGNORED_IPS}"; then
 	Server time :  `date +'%Y-%m-%d %T'`
 
     Load average    : `uptime | grep -oP '(?<=average: ).*'`
-    Storage :      `df -h / | awk '{ a = $4; } END { print a }'`
+    Available Storage :      `df -h / | awk '{ a = $4; } END { print a }'`
 
 
 --
