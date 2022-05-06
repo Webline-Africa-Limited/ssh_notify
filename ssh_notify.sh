@@ -183,6 +183,9 @@ if ! [[ $EMAIL_ENABLED -eq 0 ]] && ! inArray ${IP} "${EMAIL_IGNORED_IPS}"; then
 	Server IP :    `dig +short myip.opendns.com @resolver1.opendns.com`
 	Server port :  `echo ${SSH_CLIENT} | awk '{ port = $3 } END { print port }'`
 	Server time :  `date +'%Y-%m-%d %T'`
+	
+	Load average    : `uptime | grep -oP '(?<=average: ).*'`
+        Storage :      `df -h / | awk '{ a = $4; } END { print a }'`
 
 
 --
@@ -192,7 +195,7 @@ Sent from `uname -a | awk '{ name = $2 } END { print name }'` [`dig +short myip.
 fi # }
 
 # Print system info {
-if ! [[ $MESSAGE_ENABLED -eq 0 ]]; then
+if ! [[ $MESSAGE_ENABLED -eq 0 ]] && [ $USER == 'root' ]; then
 
 	# Get the services
 	[[ -z $(command -v service) ]] && SVC_CMD="/etc/init.d/" || SVC_CMD="service "
